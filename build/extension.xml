@@ -1,0 +1,22 @@
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
+<id>net.moremorefor.HelloWorld</id>
+<versionNumber>1.0.0</versionNumber>
+<platforms>
+	<platform name="Android-ARM">
+          <deviceDeployment/>
+        </platform>
+        <platform name="Android-x86">
+          <deviceDeployment/>
+        </platform>
+	<platform name="iPhone-ARM">
+		<applicationDeployment>
+		<nativeLibrary>libANEHelloWorld.a</nativeLibrary>
+		<initializer>HelloWorldInitializer</initializer>
+		<finalizer>HelloWorldFinalizer</finalizer>
+		</applicationDeployment>
+	</platform>
+	<platform name="default">
+		<applicationDeployment/>
+        </platform>
+</platforms>
+</extension>
